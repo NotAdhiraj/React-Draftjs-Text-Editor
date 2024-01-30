@@ -45,8 +45,8 @@ function DemoEditor() {
 	useEffect(() => {
 		// console.log(localStorage.getItem("text"));
 		let contentState = stateFromMarkdown(
-			JSON.stringify(localStorage.getItem("text"))
-				? JSON.stringify(localStorage.getItem("text"))
+			JSON.stringify(localStorage.getItem("text").toString())
+				? JSON.stringify(localStorage.getItem("text").toString())
 				: " "
 		);
 		let newEditorState = EditorState.push(editorState, contentState);
