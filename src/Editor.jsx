@@ -45,9 +45,7 @@ function DemoEditor() {
 	useEffect(() => {
 		// console.log(localStorage.getItem("text"));
 		let contentState = stateFromMarkdown(
-			JSON.stringify(localStorage.getItem("text").toString())
-				? JSON.stringify(localStorage.getItem("text").toString())
-				: " "
+			localStorage.getItem("text") ? localStorage.getItem("text") : ""
 		);
 		let newEditorState = EditorState.push(editorState, contentState);
 		setEditorState(newEditorState);
@@ -82,6 +80,7 @@ function DemoEditor() {
 						onChange={setEditorState}
 						plugins={plugins}
 						className='typing_editor'
+						placeholder="Write Something!"
 					/>
 				</div>
 			</div>
