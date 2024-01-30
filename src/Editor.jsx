@@ -43,6 +43,7 @@ function DemoEditor() {
 	}
 
 	useEffect(() => {
+		console.log(localStorage.getItem("text"));
 		let contentState = stateFromMarkdown(
 			JSON.stringify(localStorage.getItem("text")).toString()
 		);
