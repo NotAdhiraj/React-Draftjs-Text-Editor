@@ -43,7 +43,7 @@ function DemoEditor() {
 	}
 
 	useEffect(() => {
-		console.log(localStorage.getItem("text"));
+		// console.log(localStorage.getItem("text"));
 		let contentState = stateFromMarkdown(
 			localStorage.getItem("text") ? localStorage.getItem("text") : ""
 		);
