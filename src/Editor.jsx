@@ -48,7 +48,7 @@ function DemoEditor() {
 		);
 		let newEditorState = EditorState.push(editorState, contentState);
 		setEditorState(newEditorState);
-	}, []);
+	}, [markdown]);
 
 	const onClick = () => {
 		localStorage.setItem("text", markdown);
