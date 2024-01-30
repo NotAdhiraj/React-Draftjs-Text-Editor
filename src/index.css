@@ -1,0 +1,83 @@
+body {
+	background-color: rgb(19, 19, 19);
+	padding: 20px;
+}
+.editor {
+	border: 1px solid white;
+	font-size: 30px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	color: white;
+	height: 17em;
+	/* width: 97%; */
+}
+
+button {
+	padding: 10px;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	font-size: larger;
+	text-align: center;
+	width: 100px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#bottone1 {
+	padding-left: 33px;
+	padding-right: 33px;
+	padding-bottom: 16px;
+	padding-top: 16px;
+	border-radius: 9px;
+	background: #d5f365;
+	border: none;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#bottone1:hover {
+	box-shadow: 7px 5px 56px -14px #c3d900;
+}
+
+#bottone1:active {
+	transform: scale(0.97);
+	box-shadow: 7px 5px 56px -10px #c3d900;
+}
+
+.heading {
+	color: white;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.btn_wrap {
+	width: 100%;
+	display: grid;
+	justify-items: flex-end;
+	align-items: end;
+}
+
+.ins_div {
+	color: white;
+	border: 2px white solid;
+	border-radius: 10px;
+	padding: 20px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ins_div > h3 {
+	font-size: 20px;
+	text-decoration: underline;
+}
