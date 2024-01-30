@@ -43,10 +43,11 @@ function DemoEditor() {
 	}
 
 	useEffect(() => {
-	    let storedText = typeof window !== 'undefined' && window.localStorage ? localStorage.getItem("text") : null;
-	    let contentState = storedText ? stateFromMarkdown(storedText.toString()) : EditorState.createEmpty();
-	    let newEditorState = EditorState.push(editorState, contentState);
-	    setEditorState(newEditorState);
+		let contentState = stateFromMarkdown(
+			localStorage.getItem("text").toString()
+		);
+		let newEditorState = EditorState.push(editorState, contentState);
+		setEditorState(newEditorState);
 	}, []);
 
 	const onClick = () => {
